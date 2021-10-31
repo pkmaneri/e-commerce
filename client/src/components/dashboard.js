@@ -8,7 +8,6 @@ import VendorHome from './venderhome';
 const Dashboard = () => {
     const [show, setShow] = useState(false);
     
-
     return (
         <>
             <section className="navbar-bg">
