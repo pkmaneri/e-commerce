@@ -6,6 +6,7 @@ import CartList from "./cart"
 
 
 const Home = () => {
+    
     const [show, setShow] = useState(false);
     const [cartitem, updateCart] = useState([]);
     const getCart = () => {
