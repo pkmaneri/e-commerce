@@ -116,4 +116,13 @@ app.use(function (err, req, res, next) {
   res.render('error');
 });
 
+var port = process.env.PORT || '4000';
+app.set('port', port);
+
+
+
+
 module.exports = app;
+app.listen(port,()=>{
+  console.log(`listning to the app ${port}`)
+})

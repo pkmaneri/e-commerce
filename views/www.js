@@ -275,6 +275,3 @@ GenderModel.deleteMany({}, ()=>{
 });
 
 }
-app.listen(port,()=>{
-  console.log(`listning to the app ${port}`)
-})
