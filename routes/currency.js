@@ -4,6 +4,7 @@ var CurrencyModel = require('../schema/currencyschema');
 
 router.get('/currencies', function (req, res, next) {
     CurrencyModel.find(function (err, data) {
+        
         if (err) {
             console.error(err);
         } else {
