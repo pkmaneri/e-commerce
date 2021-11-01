@@ -10,9 +10,9 @@ const fs = require('fs')
 // Connecting to database
 var db = 'mongodb://localhost:27017/mss_db'
 
-if (process.env.NODE_ENV && process.env.NODE_ENV.trim() == 'PROD') {
-  db = 'mongodb://mongo:27017/mss_db'
-}
+// if (process.env.NODE_ENV && process.env.NODE_ENV.trim() == 'PROD') {
+//   db = 'mongodb://mongo:27017/mss_db'
+// }
 if(process.env.NODE_ENV==="prod"){
   app.use(express.static("client/build"))
 }
