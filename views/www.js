@@ -16,7 +16,7 @@ var http = require('http');
  */
 
 var port = process.env.PORT || '4000';
-// app.set('port', port);
+app.set('port', port);
 
 /**
  * Create HTTP server.
@@ -275,3 +275,6 @@ GenderModel.deleteMany({}, ()=>{
 });
 
 }
+app.listen(port,()=>{
+  console.log(`listning to the app ${port}`)
+})
